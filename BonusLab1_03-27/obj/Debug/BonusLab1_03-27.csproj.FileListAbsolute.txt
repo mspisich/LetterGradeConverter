@@ -1,0 +1,6 @@
+c:\users\mike spisich\documents\visual studio 2015\Projects\BonusLab1_03-27\BonusLab1_03-27\bin\Debug\BonusLab1_03-27.exe.config
+c:\users\mike spisich\documents\visual studio 2015\Projects\BonusLab1_03-27\BonusLab1_03-27\bin\Debug\BonusLab1_03-27.exe
+c:\users\mike spisich\documents\visual studio 2015\Projects\BonusLab1_03-27\BonusLab1_03-27\bin\Debug\BonusLab1_03-27.pdb
+c:\users\mike spisich\documents\visual studio 2015\Projects\BonusLab1_03-27\BonusLab1_03-27\obj\Debug\BonusLab1_03-27.csprojResolveAssemblyReference.cache
+c:\users\mike spisich\documents\visual studio 2015\Projects\BonusLab1_03-27\BonusLab1_03-27\obj\Debug\BonusLab1_03-27.exe
+c:\users\mike spisich\documents\visual studio 2015\Projects\BonusLab1_03-27\BonusLab1_03-27\obj\Debug\BonusLab1_03-27.pdb
