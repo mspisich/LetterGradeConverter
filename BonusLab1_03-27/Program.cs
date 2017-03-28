@@ -13,7 +13,7 @@ namespace BonusLab1_03_27
             {
                 //User inputs numerical grade
                 Console.WriteLine("Enter a numerical grade: ");
-                int grade = int.Parse(Console.ReadLine());
+                int gradeNum = int.Parse(Console.ReadLine());
 
                 //Print letter grade
 
@@ -26,46 +26,61 @@ namespace BonusLab1_03_27
                 B: 85-80
                 C+: 79-76
                 C: 75-67
-                D+: 66-60
+                D+: 66
+                D: 65-60
                 F: 59-0
                 */
 
-                if (grade >= 99)
+                //Letter grade defaults to error message
+                string gradeLetter = "Invalid input!";
+
+                if (gradeNum > 100)
                 {
-                    Console.WriteLine("Letter Grade: A+");
+                    gradeLetter = "Grade cannot be over 100!";
                 }
-                else if (grade >= 88 && grade <= 98)
+                else if (gradeNum >= 99 && gradeNum <= 100)
                 {
-                    Console.WriteLine("Letter Grade: A");
+                    gradeLetter = "A+";
                 }
-                else if (grade >= 86 && grade <= 87)
+                else if (gradeNum >= 88)
                 {
-                    Console.WriteLine("Letter Grade: B+");
+                    gradeLetter = "A";
                 }
-                else if (grade >= 80 && grade <= 85)
+                else if (gradeNum >= 86)
                 {
-                    Console.WriteLine("Letter Grade: B");
+                    gradeLetter = "B+";
                 }
-                else if (grade >= 76 && grade <= 79)
+                else if (gradeNum >= 80)
                 {
-                    Console.WriteLine("Letter Grade: C+");
+                    gradeLetter = "B";
                 }
-                else if (grade >= 67 && grade <= 75)
+                else if (gradeNum >= 76)
                 {
-                    Console.WriteLine("Letter Grade: C");
+                    gradeLetter = "C+";
                 }
-                else if (grade == 66)
+                else if (gradeNum >= 67)
                 {
-                    Console.WriteLine("Letter Grade: D+");
+                    gradeLetter = "C";
                 }
-                else if (grade >= 60 && grade <= 65)
+                else if (gradeNum == 66)
                 {
-                    Console.WriteLine("Letter Grade: D");
+                    gradeLetter = "D+";
                 }
-                else if (grade < 60)
+                else if (gradeNum >= 60)
                 {
-                    Console.WriteLine("Letter Grade: F");
+                    gradeLetter = "D";
                 }
+                else if (gradeNum < 60 && gradeNum >= 0)
+                {
+                    gradeLetter = "F";
+                }
+                else if (gradeNum < 0)
+                {
+                    gradeLetter = "Grade cannot be less than 0!";
+                }
+
+                //Print grade
+                Console.WriteLine("Letter Grade: " + gradeLetter);
 
                 //Ask if user wants to continue
                 Console.WriteLine("Continue? y/n: ");
